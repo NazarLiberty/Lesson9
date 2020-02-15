@@ -1,0 +1,149 @@
+ @font-face{
+     font-family: "Proxima Nova Regular";
+     src: url("Proxima Nova/Proxima\ Nova\ Regular.otf") format("opentype");
+ }
+ @font-face{
+ font-family: "MYRIADPRO-REGULAR";
+src: url("myriad/MYRIADPRO-REGULAR.OTF") format("opentype")
+}
+ *{
+     box-sizing: border-box;
+ }
+
+main{
+    margin: 100px auto;
+    width: 1200px;
+    height: 900px;
+    display: flex;
+    background-color: #464f54;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+main div{
+    display: flex;
+}
+
+.content{
+background-color: white;
+height: 750px;
+width: 1060px;
+flex-flow: row nowrap;
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.404);
+}
+
+.content div:first-of-type img{
+    margin-left: 70px;
+}
+.content .text{
+    display: flex;
+    flex-flow: nowrap column;
+    margin: 180px 125px 0px 60px;
+    text-align: justify;
+}
+.content .text p:first-of-type{
+    font-family: "MYRIADPRO-REGULAR", serif;
+    font-size: 20px;
+    color: #cacaca;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.content .text h1:first-of-type{
+    font-family: "MYRIADPRO-REGULAR", serif;
+    font-size: 78px;
+    font-weight: normal;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.content .text h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: #8f8f8f;
+    font-weight: normal;
+    font-size: 30px;
+    margin: 0px 0px 25px 0px;
+    letter-spacing: 1px;
+}
+.content .text p{
+    font-size: 27px;
+    line-height: 1.4em;
+    margin: 30px 0px 0px 0px;
+}
+.editor{
+    width: 810px;
+    height: 80px;
+    background-color: #fac02d;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: flex-end;
+}
+.editor img{
+    width: 24px;
+    height: 24px;
+    margin: 0 13px;
+    box-sizing: content-box;
+    border: 3px transparent solid;
+}
+.editor img:first-of-type{
+    width: 34px;
+    height: 30px;
+    margin-left: 50px;
+    
+}
+.title_type{
+    width: 875px;
+    height: 190px;
+    background-color: #181818;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+    align-self: flex-end;
+}
+.title_type div{
+    display: flex;
+    width: 820px;
+    height: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    letter-spacing: 4px;
+}
+.title_type div p{
+    height: 20%;
+    margin: 0;
+    font-family: "Proxima Nova Regular", sans-serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.541);
+    text-transform: uppercase;
+}
+.title_type div input{
+    height: 50%;
+    width: 100%;
+    font-size: 48px;
+    border: 0;
+    color: white;
+    background-color:#181818 ;
+    padding-bottom: 5px;
+    border-bottom: 2px rgba(255, 255, 255, 0.363) solid;
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+}
+.title_type, .editor{
+    position: relative;
+    top: 170px;
+}
+.title_type input:focus{
+    outline: 0;
+}
+.editor img:hover{
+    background-color: #ad7a02e1;
+    border: orange 3px;
+    border-style: inset;
+    transition: all .1s ease-out;
+    cursor: pointer;
+}
